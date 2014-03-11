@@ -1,0 +1,333 @@
+/****** Fonts ******/
+
+@font-face {
+	font-family: 'corda';
+	src: url('fonts/cordalig-webfont.eot?#iefix') format('embedded-opentype'), 
+	     url('fonts/cordalig-webfont.woff') format('woff'), 
+	     url('fonts/cordalig-webfont.ttf')  format('truetype'),
+	     url('fonts/cordalig-webfont.svg#svgFontName') format('svg');
+}
+
+@font-face {
+	font-family: 'verner';
+	src: url('fonts/verner-webfont.eot?#iefix') format('embedded-opentype'), 
+	     url('fonts/verner-webfont.woff') format('woff'), 
+	     url('fonts/verner-webfont.ttf')  format('truetype'),
+	     url('fonts/verner-webfont.svg#svgFontName') format('svg');
+}
+
+/****** Base ******/
+
+html, body {
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+	
+body {
+  background: url("../images/light-paper-bg.png");
+	color: #7d7b78;
+	font-family: "corda", Georgia, serif;
+	font-size: 20px;
+  padding-bottom: 60px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+a, a:active, a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+p {
+	margin: 0;
+  font-size: 18px;
+}
+
+/****** Layout ******/
+
+header {
+  background-image: url("../images/brown-bg.png");
+  background-attachment: fixed;
+  height: 650px;
+}
+
+.event-info {
+  background: url("../images/dark-paper-bg.png");
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.party-info {
+  padding-bottom: 40px;
+}
+
+.map-container {
+  background: url("../images/brown-paper-bg.png");
+  padding: 20px 0;
+}
+
+.map {
+  background: url("../images/map.png");
+  background-position: top left;
+  background-size: cover;
+  height: 800px;
+}
+
+.hotel-info {
+  background: url("../images/stripes-bg.png");
+  background-attachment: fixed;
+  padding: 40px 0;
+  height: 400px;
+}
+
+.container {
+  width: 650px;
+  margin: 0 auto;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/****** Logo ******/
+
+header .logo {
+  background: url("../images/logo.png") no-repeat;
+  height: 181px;
+  width: 650px;
+  margin: 20px auto;
+}
+
+/****** Navigation ******/
+
+.nav {
+  background-color: rgba(44, 41, 39, .5);
+  padding: 20px;
+  text-align: center;
+  border-bottom: solid 1px rgba(44, 41, 39, .8);
+}
+
+.nav li {
+  display: inline-block;
+}
+
+.nav a {
+  color: #ada49b;
+  font-size: 18px;
+  padding: 0;
+  margin: 10px;
+}
+
+.nav a:hover {
+  border-bottom: dashed 1px #938a7f;
+}
+
+/****** Event Info ******/
+
+.event-info img {
+  margin-top: -381px;
+  margin-bottom: 40px;
+  border-radius: 4px;  
+}
+
+.event-info ul {
+  width: 650px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.event-info a,  
+.event-info a:visited, 
+.event-info a:active {
+  color: #7d7b78;
+  text-decoration: none;
+}
+
+.event-info a:hover {
+  border-bottom: dashed 1px #938a7f;
+}
+
+.event-info li {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  border-right: dotted 1px #7d7b78;
+  padding: 0 22px 0 20px;
+  vertical-align: top;
+}
+.event-info li:first-child {
+  padding-left: 0;
+}
+
+.event-info li:last-child {
+  border-right: 0;
+  padding-right: 0;
+}
+
+.event-info h2 {
+  font-family: 'verner';
+  font-size: 38px;
+  color: #498e86;
+  margin: 0;
+}
+
+.event-info .big {
+  font-size: 26px;
+  margin: 0;
+}
+
+/****** Party Info ******/
+
+.party-info .header {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.party-info .header::before {
+  border-bottom: 4px solid rgba(0,0,0,0.25);
+  margin-bottom: 30px;
+  margin-top: 12px;
+  border-color: #dcd6cb;
+  content: "";
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  z-index: -1;
+}
+
+.party-info h2 {
+  background: url("../images/light-paper-bg.png");
+  font-family: 'verner';
+  font-size: 45px;
+  display: inline-block;
+  color: #cf7588;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.party-info .container {
+  text-align: center;
+}
+
+.bride-groom, .players {
+  display: inline-block;
+  padding: 0px 10px;
+  margin-bottom: 20px;
+}
+
+.players {
+  width: 192px;
+}
+
+.players:last-child {
+  width: 191px;
+}
+
+.bride-groom img, .players img {
+  margin-bottom: 10px;
+  
+}
+.bride-groom h3, .players h3 {
+  font-family: 'verner';
+  margin: 0;
+  color: #498e86;
+}
+
+.bride-groom h3 {
+  font-size: 30px;
+}
+
+.players h3 {
+  font-size: 25px;
+}
+
+/****** Getting There ******/
+
+.flag {
+  background: url("../images/light-paper-bg.png");
+  width: 241px;
+  padding: 20px 40px;
+  float: right;
+  text-align: center;
+}
+
+.flag h3 {
+  font-family: 'verner';
+  font-size: 38px;
+  color: #6f6861;
+  margin: 20px 0;
+}
+
+.flag ul {
+  list-style-type: none;
+}
+
+.flag li a {
+  display: block;
+  padding: 10px 0;
+  border-top: dotted 1px #7d7b78;
+  font-size: 18px;
+  color: #6f6861;
+}
+
+.flag li a:hover {
+  color: #c45169;
+  background: rgba(165, 155, 142, .2);
+}
+
+/****** Where to stay ******/
+
+
+.hotel-info {
+  text-align: center;
+  font-size: 18px;
+}
+
+.hotel-info .container {
+  padding: 40px 80px;
+  background: url("../images/light-paper-bg.png");
+}
+
+.hotel {
+  margin: 30px 0 15px;
+}
+
+.hotel a, .hotel a:visited, .hotel a:active, .hotel a:hover {
+  font-family: 'verner';
+  font-size: 58px;
+  color: #c97d93;
+}
+
+.room-rates { margin-bottom: 20px; }
+
+.room-rates li {
+  display: inline-block;
+  list-style-type: none;
+  vertical-align: top;
+  font-size: 23px;
+}
+
+.rate { width: 200px; }
+
+.single { text-align: right; }
+
+.double { text-align: left; }
+
+/****** Contact ******/
+
+.contact {
+  text-align: center;
+  padding: 20px 0 40px;
+}
+
+.contact a, .contact a:visited, .contact a:active {
+  color: #c45169;
+  text-decoration: none;
+}
+.contact a:hover {
+  border-bottom: dashed 1px #938a7f;
+}
