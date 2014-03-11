@@ -2,18 +2,18 @@
 
 @font-face {
 	font-family: 'corda';
-	src: url('fonts/cordalig-webfont.eot?#iefix') format('embedded-opentype'), 
-	     url('fonts/cordalig-webfont.woff') format('woff'), 
-	     url('fonts/cordalig-webfont.ttf')  format('truetype'),
-	     url('fonts/cordalig-webfont.svg#svgFontName') format('svg');
+	src: url('../fonts/cordalig-webfont.eot?#iefix') format('embedded-opentype'), 
+	     url('../fonts/cordalig-webfont.woff') format('woff'), 
+	     url('../fonts/cordalig-webfont.ttf')  format('truetype'),
+	     url('../fonts/cordalig-webfont.svg#svgFontName') format('svg');
 }
 
 @font-face {
 	font-family: 'verner';
-	src: url('fonts/verner-webfont.eot?#iefix') format('embedded-opentype'), 
-	     url('fonts/verner-webfont.woff') format('woff'), 
-	     url('fonts/verner-webfont.ttf')  format('truetype'),
-	     url('fonts/verner-webfont.svg#svgFontName') format('svg');
+	src: url('../fonts/verner-webfont.eot?#iefix') format('embedded-opentype'), 
+	     url('../fonts/verner-webfont.woff') format('woff'), 
+	     url('../fonts/verner-webfont.ttf')  format('truetype'),
+	     url('../fonts/verner-webfont.svg#svgFontName') format('svg');
 }
 
 /****** Base ******/
@@ -81,8 +81,7 @@ header {
 .hotel-info {
   background: url("../images/stripes-bg.png");
   background-attachment: fixed;
-  padding: 40px 0;
-  height: 400px;
+  padding: 40px 0 60px;
 }
 
 .container {
@@ -130,7 +129,7 @@ header .logo {
 
 .event-info img {
   margin-top: -381px;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
   border-radius: 4px;  
 }
 
@@ -171,6 +170,7 @@ header .logo {
 .event-info h2 {
   font-family: 'verner';
   font-size: 38px;
+  line-height: 1.8;
   color: #498e86;
   margin: 0;
 }
@@ -183,14 +183,14 @@ header .logo {
 /****** Party Info ******/
 
 .party-info .header {
-  margin: 50px 0;
+  margin: 30px 0;
   text-align: center;
 }
 
 .party-info .header::before {
   border-bottom: 4px solid rgba(0,0,0,0.25);
   margin-bottom: 30px;
-  margin-top: 12px;
+  margin-top: 33px;
   border-color: #dcd6cb;
   content: "";
   left: 0px;
@@ -203,6 +203,7 @@ header .logo {
   background: url("../images/light-paper-bg.png");
   font-family: 'verner';
   font-size: 45px;
+  line-height: 1;
   display: inline-block;
   color: #cf7588;
   margin: 0;
@@ -227,12 +228,9 @@ header .logo {
   width: 191px;
 }
 
-.bride-groom img, .players img {
-  margin-bottom: 10px;
-  
-}
 .bride-groom h3, .players h3 {
   font-family: 'verner';
+  line-height: 1.8;
   margin: 0;
   color: #498e86;
 }
@@ -258,8 +256,9 @@ header .logo {
 .flag h3 {
   font-family: 'verner';
   font-size: 38px;
+  line-height: 1.8;
   color: #6f6861;
-  margin: 20px 0;
+  margin: 0 0 20px;
 }
 
 .flag ul {
@@ -293,12 +292,13 @@ header .logo {
 }
 
 .hotel {
-  margin: 30px 0 15px;
+  margin-bottom: 15px;
 }
 
 .hotel a, .hotel a:visited, .hotel a:active, .hotel a:hover {
   font-family: 'verner';
   font-size: 58px;
+  line-height: 1.8;
   color: #c97d93;
 }
 
